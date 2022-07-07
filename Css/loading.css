@@ -1,0 +1,85 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.loadText {
+  color: #FFF;
+  font-family: "Cairo", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -62.5px;
+  transform: translate(0px, 100px);
+}
+
+.dotted-loader {
+  width: 100px;
+  height: 100px;
+  border-width: 4px;
+  border-color: #FFF;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: rotate-right 2s linear infinite;
+}
+
+.dotted-loader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-width: 4px;
+  border-color: #DDD;
+  border-style: solid dotted;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: rotate-left 1s linear infinite;
+}
+
+@keyframes rotate-right {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate-left {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-1turn);
+  }
+}
+
+.disappear {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
