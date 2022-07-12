@@ -12,14 +12,11 @@
 }
 
 .loadText {
-  color: #FFF;
-  font-family: "Cairo", sans-serif;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -50px;
-  margin-left: -62.5px;
-  transform: translate(0px, 100px);
+    color: #FFF;
+    font-family: "Cairo", sans-serif;
+    position: absolute;
+    margin: 50px auto;
+    transform: translate(0px, 100px);
 }
 
 .dotted-loader {
