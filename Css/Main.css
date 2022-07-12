@@ -519,13 +519,36 @@
 }
 
 .aniBigLine2 {
-    animation-name: bigLine;
+    animation-name: bigLine2;
     animation-duration: 2s;
     animation-delay: -1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1turn;
     animation-direction: alternate;
     transform-origin: center;
+    transform: translateY(-4.5px);
+    -webkit-transform: translateY(-4.5px);
+    -moz-transform: translateY(-4.5px);
+    -ms-transform: translateY(-4.5px);
+    -o-transform: translateY(-4.5px);
+}
+
+@keyframes bigLine2 {
+    0% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1) translateY(-4.5px);
+        -webkit-transform: scale(1) translateY(-5px);
+        -moz-transform: scale(1) translateY(-5px);
+        -ms-transform: scale(1) translateY(-5px);
+        -o-transform: scale(1) translateY(-5px);
+}
 }
 
 .aniBigLine3 {
@@ -863,6 +886,27 @@
     /* cursor: url(https://i.postimg.cc/SQ8S5JnP/360-F-213268478-0fd04f-F8-CKGRd-XBc8e-AHNJfdmtc-Mk3-Ea-1.png), text; */
 }
 
+/* .inputFormForSelect {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--thirdC);
+    padding: 10px 30px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    margin: 10px;
+    flex-grow: 1;
+    font-family: inherit;
+    border: 0;
+    outline: 0;
+    border-radius: 2.5px;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    -ms-border-radius: 2.5px;
+    -o-border-radius: 2.5px;
+} */
+
 input[type="password" i] {
     -webkit-text-security: disc !important;
 }
@@ -876,13 +920,12 @@ input[type="password" i] {
     height: 10px;
     fill: #b10000;
     margin: 0 -5px;
+    display: block;
 }
 
 .messageInput {
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--thirdC);
     padding: 10px 30px;
     margin: 10px;

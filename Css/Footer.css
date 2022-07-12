@@ -34,7 +34,7 @@
 .endLinks {
     display: flex;
     flex-flow: column wrap;
-    width: 165px;
+    /* width: 165px; */
     margin: 0 10px;
 }
 
@@ -50,7 +50,7 @@
 .endSections {
     display: flex;
     flex-flow: column wrap;
-    width: 97.5px;
+    /* width: 97.5px; */
     margin: 0 10px;
 }
 
@@ -99,7 +99,7 @@
 .contactUsSection {
     display: flex;
     flex-flow: column wrap;
-    width: 85px;
+    /* width: 85px; */
     margin: 0 10px;
 }
 
@@ -114,7 +114,7 @@
 .flexText {
     display: flex;
     text-transform: capitalize;
-    width: 410px;
+    /* width: 410px; */
     flex-direction: column;
     margin: 0 10px;
 }
@@ -182,7 +182,7 @@
     font-family: 6px;
 }
 
-@media (max-width: 947px) {
+@media (max-width: 1099px) {
     .contactUsSection, .endSections, .endLinks {
         margin: 0 10px 20px;
     }
