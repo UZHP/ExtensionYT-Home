@@ -17,19 +17,45 @@
     --fifthC: #555;
 }
 
+.headOfPage.change {
+    background-color: var(--blackC);
+    box-shadow: 0 5px 10px var(--mainShadowC);
+}
+
 .headOfPage {
     color: var(--whiteC);
-    background-color: var(--blackC);
+    background-color: var(--firstC);
     padding: 20px 50px;
     width: 100%;
     text-transform: capitalize;
-    /* border-top: 1px solid var(--whiteC); */
-    border-bottom: 1px solid var(--whiteC);
-    box-shadow: 0 5px 10px var(--mainShadowC);
     margin-bottom: 10px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.bottomTop {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 1px;
+    background-color: var(--whiteC);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.bottomTop.showTop {
+    width: 100%;
+    left: 0;
 }
 
 .allHeader {
@@ -43,6 +69,7 @@
 .flexImg {
     display: flex;
     margin-right: 40px;
+    mix-blend-mode: lighten;
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;

@@ -36,7 +36,8 @@ body {
     cursor: url(https://i.postimg.cc/W3sMYzZ9/5.png), default !important;
 }
 
-a {
+a,
+.scrollTop {
     cursor: url(https://i.postimg.cc/4dTKNxQz/1p.png), pointer !important;
     /* cursor: url(https://i.postimg.cc/Kj53Wkw9/2p.png), pointer !important; */
 }
@@ -181,8 +182,13 @@ input {
     -webkit-filter: brightness(90%);
 } */
 
+.scrollTop.show {
+    bottom: 20px;
+    opacity: 1;
+}
 
 .scrollTop {
+    opacity: 0;
     display: block;
     width: 50px;
     height: 50px;
@@ -191,8 +197,8 @@ input {
     background-size: 125%;
     cursor: pointer;
     position: fixed;
-    bottom: 20px;
     right: 20px;
+    bottom: -75px;
     border: 1px solid #555;
     box-shadow: 0 5px 10px -5px var(--shadowC);
     border-radius: 50%;
@@ -200,6 +206,11 @@ input {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
 }
 
 .scrollTop:hover {

@@ -695,7 +695,7 @@
 .headingForm {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 75%;
     text-transform: capitalize;
     background-color: var(--thirdC);
     padding: 20px;
@@ -933,9 +933,9 @@ input[type="password" i] {
     font-family: inherit;
     border: 0;
     outline: 0;
-    width: 67%;
+    /* width: 67%;
     min-width: 67%;
-    max-width: 67%;
+    max-width: 67%; */
     height: 45.59px;
     min-height: 45.59px;
     font-size: 16px;
@@ -1089,6 +1089,10 @@ input[type="password" i] {
     .submitForm {
         width: 100%;
         margin: 0 10px 10px;
+    }
+
+    .requiredC {
+        display: none;
     }
 }
 

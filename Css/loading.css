@@ -113,7 +113,7 @@
 
 .loadText {
   color: #FFF;
-  font-family: "Cairo", sans-serif;
+  /* font-family: "Cairo", sans-serif; */
   font-size: 22px;
   letter-spacing: 1px;
   position: absolute;
@@ -171,7 +171,7 @@
 
 .loadSText {
   color: #FFF;
-  font-family: "Cairo", sans-serif;
+  /* font-family: "Cairo", sans-serif; */
   font-size: 22px;
   letter-spacing: 1px;
   position: absolute;
