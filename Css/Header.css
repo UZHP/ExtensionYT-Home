@@ -17,14 +17,17 @@
     --fifthC: #555;
 }
 
-.headOfPage.change {
+/* .headOfPage.change {
     background-color: var(--blackC);
     box-shadow: 0 5px 10px var(--mainShadowC);
-}
+} */
 
 .headOfPage {
     color: var(--whiteC);
-    background-color: var(--firstC);
+    /* background-color: var(--firstC); */
+    background-color: var(--blackC);
+    border-bottom: 1px solid var(--whiteC);
+    box-shadow: 0 5px 10px var(--mainShadowC);
     padding: 20px 50px;
     width: 100%;
     text-transform: capitalize;
@@ -53,10 +56,11 @@
     -o-transition: all .5s ease-in-out;
 }
 
-.bottomTop.showTop {
+/* .bottomTop.showTop {
     width: 100%;
     left: 0;
-}
+} */
+
 
 .allHeader {
     display: flex;

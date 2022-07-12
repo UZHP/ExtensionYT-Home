@@ -1,5 +1,4 @@
 var loader = document.querySelector(".loader");
-
 window.addEventListener("load", vanish);
 
 function vanish() {
@@ -7,7 +6,6 @@ function vanish() {
 };
 
 let spanTop = document.querySelector(".scrollTop");
-
 window.onscroll = function () {
     // console.log(this.scrollY);;
     if (this.scrollY >= 515) {
@@ -24,22 +22,20 @@ spanTop.onclick = function () {
     });
 };
 
-let headerTop = document.querySelector(".headOfPage");
+// let headerTop = document.querySelector(".headOfPage");
+// window.onscroll = function () {
+//     if (this.scrollY >= 515) {
+//         headerTop.classList.add("change");
+//     } else {
+//         headerTop.classList.remove("change");
+//     };
+// };
 
-window.onscroll = function () {
-    if (this.scrollY >= 515) {
-        headerTop.classList.add("change");
-    } else {
-        headerTop.classList.remove("change");
-    };
-};
-
-let bottomHeader = document.querySelector(".bottomTop");
-
-window.onscroll = function () {
-    if (this.scrollY >= 515) {
-        bottomHeader.classList.add("showTop");
-    } else {
-        bottomHeader.classList.remove("showTop");
-    };
-};
+// let bottomHeader = document.querySelector(".bottomTop");
+// window.onscroll = function () {
+//     if (this.scrollY >= 515) {
+//         bottomHeader.classList.add("showTop");
+//     } else {
+//         bottomHeader.classList.remove("showTop");
+//     };
+// };
